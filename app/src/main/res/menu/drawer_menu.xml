@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_mi_salud"
+        android:icon="@drawable/ic_health"
+        android:title="Mi Salud" />
+    <item
+        android:id="@+id/nav_comidas"
+        android:icon="@drawable/ic_food"
+        android:title="Comidas" />
+    <item
+        android:id="@+id/nav_ejercicios"
+        android:icon="@drawable/ic_exercise"
+        android:title="Ejercicios" />
+</menu>
+

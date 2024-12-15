@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#C6F0CD">
 
+    <TextView
+        android:id="@+id/tvTituloEjercicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EJERCICIOS"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvFechaHoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="Fecha Hoy:"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloEjercicios" />
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="ESTADO : NO COMPLETADO"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFechaHoy" />
+
+    <ImageView
+        android:id="@+id/ivEjercicios"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/ic_ejercicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEstado" />
+
+    <Button
+        android:id="@+id/btnComenzarEjercicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMENZAR!"
+        app:layout_constraintTop_toBottomOf="@id/ivEjercicios"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

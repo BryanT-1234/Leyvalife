@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6F0CD">
+
+    <TextView
+        android:id="@+id/tvActualizarPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Peso"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/etNuevoPeso"
+        android:layout_width="345dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="48dp"
+        android:hint="Nuevo peso (kg)"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvActualizarPeso" />
+
+    <Button
+        android:id="@+id/btnGuardarPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/white"
+        android:text="Guardar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNuevoPeso" />
+
+    <ImageView
+        android:id="@+id/pesoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="76dp"
+        android:clipToOutline="true"
+        android:contentDescription="@string/logo_desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_kilogramo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGuardarPeso" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

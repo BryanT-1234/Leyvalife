@@ -42,8 +42,12 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        // Cargar el fragmento por defecto
-        if (savedInstanceState == null) {
+        // Redirigir a un apartado específico según el flag navigateTo
+        val navigateTo = intent.getStringExtra("navigateTo")
+        if (navigateTo == "Ejercicios") {
+            loadFragment(EjerciciosFragment())
+        } else if (savedInstanceState == null) {
+            // Cargar el fragmento por defecto
             loadFragment(MiSaludFragment())
         }
 

@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ver Seguimiento"
-        android:textSize="26sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"
@@ -104,5 +104,33 @@
         app:layout_constraintTop_toBottomOf="@id/tvImcMeta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnActualizarPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:text="Actualizar Peso"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pesoImageView" />
+
+    <Button
+        android:id="@+id/btnVerHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnActualizarPeso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

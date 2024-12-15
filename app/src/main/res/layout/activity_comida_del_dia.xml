@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6F0CD">
+
+    <TextView
+        android:id="@+id/tvComidaDelDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comida del día"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:id="@+id/btnDesayuno"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Desayuno"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvComidaDelDia" />
+
+
+    <ImageView
+        android:id="@+id/logoDesayuno"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:clipToOutline="true"
+        android:contentDescription="@string/logo_desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_manana"
+        app:layout_constraintBottom_toTopOf="@+id/btnAlmuerzo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <Button
+        android:id="@+id/btnAlmuerzo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Almuerzo"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDesayuno" />
+
+    <ImageView
+        android:id="@+id/logoAlmuerzo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:clipToOutline="true"
+        android:contentDescription="@string/logo_desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_tarde"
+        app:layout_constraintBottom_toTopOf="@+id/btnCena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <Button
+        android:id="@+id/btnCena"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Cena"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAlmuerzo" />
+
+    <ImageView
+        android:id="@+id/logoCena"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="548dp"
+        android:clipToOutline="true"
+        android:contentDescription="@string/logo_desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_noche"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

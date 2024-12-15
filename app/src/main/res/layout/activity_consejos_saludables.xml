@@ -4,24 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C6F0CD"
     tools:context=".ConsejosSaludablesActivity">
 
     <TextView
         android:id="@+id/tvConsejos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:text="Consejos Saludables"
-        android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ivConsejo"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_health"
-        app:layout_constraintTop_toBottomOf="@+id/tvConsejos"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/ic_postura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvConsejos" />
+
+    <TextView
+        android:id="@+id/tvPosturaMensaje"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="Recuerda mantener una postura correcta a lo largo del día"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivConsejo" />
+
+    <!-- Botón "Entendido" -->
+    <Button
+        android:id="@+id/btnEntendido"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="@color/white"
+        android:text="Entendido"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

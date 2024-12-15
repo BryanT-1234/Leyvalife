@@ -10,33 +10,72 @@
         android:id="@+id/tvTitleMiSalud"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="Mi Salud"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:textColor="#000000"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="35sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <Button
         android:id="@+id/btnVerSeguimiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#FFFFFF"
         android:text="Ver Seguimiento"
-        app:layout_constraintTop_toBottomOf="@id/tvTitleMiSalud"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleMiSalud" />
+
+    <ImageView
+        android:id="@+id/logoSeguimiento"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:clipToOutline="true"
+        android:contentDescription="@string/logo_desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_seguimiento"
+        app:layout_constraintBottom_toTopOf="@+id/btnConsejosSaludables"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786" />
 
     <Button
         android:id="@+id/btnConsejosSaludables"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:backgroundTint="#FFFFFF"
         android:text="Consejos Saludables"
-        app:layout_constraintTop_toBottomOf="@id/btnVerSeguimiento"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnVerSeguimiento" />
+
+
+    <ImageView
+        android:id="@+id/logoConsejos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="484dp"
+        android:clipToOutline="true"
+        android:contentDescription="@string/logo_desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_consejo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

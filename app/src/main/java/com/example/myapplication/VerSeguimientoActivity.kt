@@ -1,6 +1,8 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -14,20 +16,46 @@ class VerSeguimientoActivity : AppCompatActivity() {
     private lateinit var tvPeso: TextView
     private lateinit var tvImcActual: TextView
     private lateinit var tvImcMeta: TextView
+    private lateinit var btnActualizarPeso: Button
+    private lateinit var btnVerHistorial: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ver_seguimiento)
 
-        // Inicializar los TextViews
+        // Inicializar las vistas
         tvNombre = findViewById(R.id.tvNombre)
         tvEdad = findViewById(R.id.tvEdad)
         tvTalla = findViewById(R.id.tvTalla)
         tvPeso = findViewById(R.id.tvPeso)
         tvImcActual = findViewById(R.id.tvImcActual)
         tvImcMeta = findViewById(R.id.tvImcMeta)
+        btnActualizarPeso = findViewById(R.id.btnActualizarPeso)
+        btnVerHistorial = findViewById(R.id.btnVerHistorial) // Nuevo botón
 
-        // Obtener los datos del usuario desde Firebase
+        // Cargar los datos por primera vez
+        cargarDatosDesdeFirebase()
+
+        // Botón para abrir ActualizarPesoActivity
+        btnActualizarPeso.setOnClickListener {
+            val intent = Intent(this, ActualizarPesoActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Botón para abrir HistorialSeguimientosActivity
+        btnVerHistorial.setOnClickListener {
+            val intent = Intent(this, HistorialSeguimientosActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Recargar los datos cada vez que la actividad se vuelve a mostrar
+        cargarDatosDesdeFirebase()
+    }
+
+    private fun cargarDatosDesdeFirebase() {
         val firebaseAuth = FirebaseAuth.getInstance()
         val userId = firebaseAuth.currentUser?.uid
 

@@ -42,9 +42,34 @@
         <activity
             android:name=".RegisterStep3Activity"
             android:exported="true" />
+
+        <!-- Ver Seguimiento -->
         <activity android:name=".VerSeguimientoActivity" />
+
+        <!-- Consejos Saludables -->
         <activity android:name=".ConsejosSaludablesActivity" />
 
-    </application>
+        <!-- Actualizar Peso -->
+        <activity android:name=".ActualizarPesoActivity" />
 
+        <!-- Ver historial -->
+        <activity android:name=".HistorialSeguimientosActivity" />
+
+        <!-- Información de Alimentos -->
+        <activity android:name=".InfoAlimentosActivity" />
+
+        <!-- Detalle de Alimento -->
+        <activity android:name=".DetalleAlimentoActivity" />
+        <!-- Informacion de Comida -->
+        <activity android:name=".ComidaDelDiaActivity" />
+        <!-- Detalle de Comida -->
+        <activity android:name=".DetalleComidaActivity" />
+
+        <!-- Nuevas actividades para Ejercicios -->
+        <activity android:name=".EjerciciosActivity" />
+
+
+
+
+    </application>
 </manifest>
